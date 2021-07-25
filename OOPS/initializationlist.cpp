@@ -1,4 +1,4 @@
-//constant variables and refrence variable needs to be initialized at the time of creation so we use initilization list in this case//
+//constant variables and reference variable needs to be initialized at the time of creation so we use initilization list in this case//
 
 
 #include<bits/stdc++.h>
