@@ -67,6 +67,12 @@ class fraction{
         return (num==f2.num&&denom==f2.denom);
         
     }
+    //pre increment//
+    void operator++(){
+        num=num+denom;
+        simplify();
+      
+    }
 };
 int main(){
     fraction f1(10,2);
