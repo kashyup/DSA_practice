@@ -24,11 +24,22 @@ int findLength(Node *head){
 
 
 }
+int iteLength(Node *head){
+    int count=0;
+    Node *temp=head;
+    while(temp!=NULL){
+        temp=temp->next;
+        count++;
+    }
+    return count;
+}
 int main(){
     Node *head=new Node(10);
     head->next=new Node(30);
     head->next->next=new Node(30);
     int res=findLength(head);
+    cout<<res;
+    int res2=iteLength(head);
     cout<<res;
     return 0;
 }
