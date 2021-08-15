@@ -1,3 +1,5 @@
+creating a tree and adding elements 
+
 #include<bits/stdc++.h>
 using namespace std;
 template<typename T>
