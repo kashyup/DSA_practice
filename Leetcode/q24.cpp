@@ -37,7 +37,7 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
         
-        int left = 0 ;
+       /* int left = 0 ;
         
         int right = numbers.size()-1;
         
@@ -59,6 +59,29 @@ public:
             }
             
         }
+        return { };*/
+        
+      unordered_map<int,int>map;
+       
+        int key;
+        
+        for(int i = 0 ; i< numbers.size(); i++){
+            
+            key = numbers[i];
+            
+            if(map.count(target-key)>0){
+                
+                return {map[target-key]+1, i+1}; 
+               
+            }
+            else{
+                
+               map[key]=i;
+            }
+            
+        }
+      
         return { };
+        
     }
 };
